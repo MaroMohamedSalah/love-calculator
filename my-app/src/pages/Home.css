@@ -1,0 +1,11 @@
+input::placeholder {
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+input:focus::placeholder {
+	opacity: 0;
+	outline: #f92f60 !important;
+}
+.home {
+	height: calc(100vh - 57.6px);
+}
