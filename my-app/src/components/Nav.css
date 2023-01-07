@@ -1,0 +1,13 @@
+nav {
+	background-color: var(--Purple-Haze);
+}
+nav h1 {
+	color: var(--Periwinkle);
+}
+nav .records {
+	transition: all 0.2s;
+	color: var(--red);
+}
+nav .records:hover {
+	color: var(--Periwinkle);
+}
