@@ -5,3 +5,7 @@
 	--Rosewater: #d9a1a0;
 	--red: #f92f60;
 }
+.main {
+	height: calc(100vh - 96px - 57.6px);
+	background-color: var(--Rosewater);
+}

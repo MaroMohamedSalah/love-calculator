@@ -1,5 +1,7 @@
 nav {
 	background-color: var(--Purple-Haze);
+	position: fixed;
+	top: 0;
 }
 nav h1 {
 	color: var(--Periwinkle);

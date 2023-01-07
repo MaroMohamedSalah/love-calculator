@@ -1,11 +1,5 @@
 .Home {
-	height: calc(100vh - 96px - 57.6px);
-	background-color: var(--Rosewater);
-}
-.google-ads {
-	width: 25%;
-	height: 93%;
-	background-color: var(--Purple-Haze);
+	height: 100%;
 }
 .box {
 	position: relative;
