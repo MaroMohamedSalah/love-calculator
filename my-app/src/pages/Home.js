@@ -50,7 +50,7 @@ const Home = () => {
 	};
 	return (
 		<div className="Home d-flex justify-content-center align-items-center">
-			<div className="box">
+			<div className="box w-sm-100">
 				<form
 					action=""
 					onSubmit={(e) => {
