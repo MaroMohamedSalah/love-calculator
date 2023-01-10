@@ -73,6 +73,7 @@
 	outline: none;
 	z-index: 15;
 	color: var(--Purple-Haze);
+	text-transform: capitalize;
 }
 .input-box span {
 	position: absolute;
