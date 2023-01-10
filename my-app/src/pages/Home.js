@@ -1,5 +1,7 @@
+import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 const Home = () => {
+	const navigate = useNavigate();
 	return (
 		<div className="Home d-flex justify-content-center align-items-center">
 			<div className="box">
@@ -22,6 +24,10 @@ const Home = () => {
 							type="submit"
 							value={"CALCULATE LOVE"}
 							className="btn btn-block"
+							onClick={(e) => {
+								e.preventDefault();
+								navigate("/result");
+							}}
 						/>
 					</div>
 				</form>

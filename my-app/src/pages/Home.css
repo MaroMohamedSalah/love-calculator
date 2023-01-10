@@ -13,7 +13,7 @@
 .box::after {
 	content: "";
 	position: absolute;
-	animation: round 6s linear infinite;
+	animation: round 8s linear infinite;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg, transparent, var(--red), var(--red));
 	width: 100%;
@@ -24,7 +24,7 @@
 .box::before {
 	content: "";
 	position: absolute;
-	animation: round 6s linear infinite;
+	animation: round 8s linear infinite;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg, transparent, var(--red), var(--red));
 	width: 100%;
@@ -36,7 +36,7 @@
 .Home .box form {
 	position: absolute;
 	background-color: var(--Purple-Haze);
-	inset: 2px;
+	inset: 3px;
 	z-index: 10;
 	border-radius: 8px;
 	padding: 10px;
