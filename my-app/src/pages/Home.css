@@ -1,6 +1,10 @@
 .Home {
 	height: 100%;
-	width: 100%;
+}
+@media (max-width: 575.98px) {
+	.Home {
+		width: 100%;
+	}
 }
 .box {
 	position: relative;
