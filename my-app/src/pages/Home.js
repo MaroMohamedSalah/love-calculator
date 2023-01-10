@@ -4,6 +4,7 @@ import axios from "axios";
 import "./Home.css";
 import { useState } from "react";
 import resultState from "../atoms/Result-atom";
+import Swal from "sweetalert2";
 const Home = () => {
 	const navigate = useNavigate();
 	const [res, setRes] = useRecoilState(resultState);
@@ -26,10 +27,25 @@ const Home = () => {
 				if (response.status === 200) {
 					setRes(response.data);
 					navigate("/result");
+				} else {
+					Swal.fire({
+						icon: "error",
+						title: "Oops...",
+						text: "Something went wrong!",
+						footer:
+							'<a href="https://wa.me/1102654851" target="_blank">Contact with the owner?</a>',
+					});
 				}
 			})
 			.catch(function (error) {
 				console.error(error);
+				Swal.fire({
+					icon: "error",
+					title: "Oops...",
+					text: "Something went wrong!",
+					footer:
+						'<a href="https://wa.me/1102654851" target="_blank">Contact with the owner?</a>',
+				});
 			});
 	};
 	return (
