@@ -6,6 +6,6 @@
 	--red: #f92f60;
 }
 .main {
-	height: calc(100vh - 8vh - 10vh);
+	height: calc(100vh - 8vh - 15vh);
 	background-color: var(--Rosewater);
 }
