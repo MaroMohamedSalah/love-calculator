@@ -12,10 +12,6 @@ const Home = () => {
 	const [sname, setSname] = useState("");
 	const [isInput1Valid, setIsInput1Valid] = useState(false);
 	const [isInput2Valid, setIsInput2Valid] = useState(false);
-	let valid1 = document.getElementById("valid1");
-	let valid2 = document.getElementById("valid2");
-	let invalid1 = document.getElementById("invalid1");
-	let invalid2 = document.getElementById("invalid2");
 	const handelSubmit = () => {
 		if (isInput1Valid === true && isInput2Valid === true) {
 			const options = {
@@ -34,6 +30,14 @@ const Home = () => {
 				.then(function (response) {
 					if (response.status === 200) {
 						setRes(response.data);
+						axios
+							.post("http://localhost:3000/records", {
+								firstn: response.data.fname,
+								secondn: response.data.sname,
+								percentage: response.data.percentage,
+							})
+							.then((res) => res)
+							.then((error) => error);
 						navigate("/result");
 					} else {
 						Swal.fire({
@@ -95,13 +99,13 @@ const Home = () => {
 											/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g
 										)
 									) {
-										valid1.style.opacity = 1;
-										invalid1.style.opacity = 0;
+										document.getElementById("valid1").style.opacity = 1;
+										document.getElementById("invalid1").style.opacity = 0;
 										setIsInput1Valid(true);
 										setFname(e.target.value);
 									} else {
-										valid1.style.opacity = 0;
-										invalid1.style.opacity = 1;
+										document.getElementById("valid1").style.opacity = 0;
+										document.getElementById("invalid1").style.opacity = 1;
 										setIsInput1Valid(false);
 									}
 								}}
@@ -114,7 +118,7 @@ const Home = () => {
 								</h4>
 								<h4 className="invalid" id="invalid1">
 									<span>Invalid</span>
-									<i class="fa-solid fa-xmark"></i>
+									<i className="fa-solid fa-xmark"></i>
 								</h4>
 							</span>
 							<i className="under-line"></i>
@@ -131,13 +135,13 @@ const Home = () => {
 											/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g
 										)
 									) {
-										valid2.style.opacity = 1;
-										invalid2.style.opacity = 0;
+										document.getElementById("valid2").style.opacity = 1;
+										document.getElementById("invalid2").style.opacity = 0;
 										setIsInput2Valid(true);
 										setSname(e.target.value);
 									} else {
-										valid2.style.opacity = 0;
-										invalid2.style.opacity = 1;
+										document.getElementById("valid2").style.opacity = 0;
+										document.getElementById("invalid2").style.opacity = 1;
 										setIsInput2Valid(false);
 									}
 								}}
@@ -150,7 +154,7 @@ const Home = () => {
 								</h4>
 								<h4 className="invalid" id="invalid2">
 									<span>Invalid</span>
-									<i class="fa-solid fa-xmark"></i>
+									<i className="fa-solid fa-xmark"></i>
 								</h4>
 							</span>
 							<i className="under-line"></i>

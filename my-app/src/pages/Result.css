@@ -50,18 +50,61 @@
 	transform: translateY(6px);
 	font-weight: 900;
 }
-.facebook-share {
+.social {
 	position: absolute;
 	bottom: 35px;
+	right: 17px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+}
+.facebook,
+.instagram,
+.whats {
 	width: 30px;
 	height: 30px;
-	background-color: var(--Periwinkle);
-	color: var(--Rosewater);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
-	right: 17px;
-	transition: all 0.5s 1s ease-in-out;
 	cursor: pointer;
+	transition: all 0.5s 1s ease-in-out;
+	background-color: var(--Periwinkle);
+	color: var(--Rosewater);
+}
+.facebook:hover {
+	background-color: #4267b2;
+	color: whitesmoke;
+	transition: all 0.5s 0s ease-in-out;
+}
+.instagram:hover {
+	transition: all 0.5s 0s ease-in-out;
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	color: whitesmoke;
+}
+.whats:hover {
+	background-color: #25d366;
+	color: whitesmoke;
+	transition: all 0.5s 0s ease-in-out;
+}
+.back {
+	position: absolute;
+	bottom: 35px;
+	left: 17px;
+	bottom: 32px;
+	background-color: var(--Periwinkle);
+	color: var(--Rosewater);
+}
+.back:hover {
+	background-color: var(--red);
+	color: var(--Purple-Haze);
+	transition: all 0.5 ease-in-out;
 }

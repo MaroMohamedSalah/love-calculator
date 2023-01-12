@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { atom, useRecoilState } from "recoil";
+import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { Link } from "react-router-dom";
 import resultState from "../atoms/Result-atom";
 import "./Result.css";
 const Result = () => {
@@ -53,12 +54,32 @@ const Result = () => {
 							<p className={showRes === false ? "opacity-0" : "opacity-1"}>
 								{res.result}
 							</p>
-							<div
-								className={`facebook-share ${
-									showRes === false ? "opacity-0" : "opacity-1"
-								}`}
-							>
-								<i className="fa-brands fa-facebook-f"></i>
+
+							<Link to={"/"} className="btn back">
+								Back
+							</Link>
+							<div className="social">
+								<div
+									className={`facebook ${
+										showRes === false ? "opacity-0" : "opacity-1"
+									}`}
+								>
+									<i className="fa-brands fa-facebook-f"></i>
+								</div>
+								<div
+									className={`instagram ${
+										showRes === false ? "opacity-0" : "opacity-1"
+									}`}
+								>
+									<i class="fa-brands fa-instagram"></i>
+								</div>
+								<div
+									className={`whats ${
+										showRes === false ? "opacity-0" : "opacity-1"
+									}`}
+								>
+									<i class="fa-brands fa-whatsapp"></i>
+								</div>
 							</div>
 						</div>
 					</div>

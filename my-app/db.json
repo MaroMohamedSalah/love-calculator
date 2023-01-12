@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "firstn": "marwan",
+      "secondn": "any one",
+      "percentage": "64",
+      "id": 1
+    },
+    {
+      "firstn": "test",
+      "secondn": "test",
+      "percentage": "36",
+      "id": 2
+    },
+    {
+      "firstn": "any",
+      "secondn": "any",
+      "percentage": "17",
+      "id": 3
+    },
+    {
+      "firstn": "shahd",
+      "secondn": "abd-el gafoor",
+      "percentage": "71",
+      "id": 4
+    }
+  ]
+}
