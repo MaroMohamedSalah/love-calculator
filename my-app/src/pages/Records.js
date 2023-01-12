@@ -4,7 +4,7 @@ import "./records.css";
 const Records = () => {
 	const [records, setRecords] = useState([]);
 	useEffect(() => {
-		fetch("http://localhost:3000/records")
+		fetch("http://192.168.1.11:3000/records")
 			.then((res) => res.json())
 			.then((data) => setRecords(data));
 	}, []);

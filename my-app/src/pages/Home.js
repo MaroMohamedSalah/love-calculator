@@ -31,7 +31,7 @@ const Home = () => {
 					if (response.status === 200) {
 						setRes(response.data);
 						axios
-							.post("http://localhost:3000/records", {
+							.post("http://192.168.1.11:3000/records", {
 								firstn: response.data.fname,
 								secondn: response.data.sname,
 								percentage: response.data.percentage,
