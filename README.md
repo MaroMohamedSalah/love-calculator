@@ -8,6 +8,7 @@
     * Percentage of the love.
     * advice for them (eg. Look for someone else.).
 * Then he can go to the records section and show all his records ( Still working on this section 😁 ).
+* Simulate Google ads.
 
 # Skill used in this App 🧑‍💻:
 > HTML, CSS, JS, Bootstrap, React ( Routs, Recoil, Surge, useState, and useEffect ), APIs ( Fetch and Axios), git, and GitHub.
