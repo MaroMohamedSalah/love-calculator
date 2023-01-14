@@ -45,7 +45,7 @@ const Home = () => {
 							title: "Oops...",
 							text: "Something went wrong!",
 							footer:
-								'<a href="https://wa.me/1102654851" target="_blank">Contact with the owner?</a>',
+								'<a href="https://wa.me/01102654851" target="_blank">Contact with the owner?</a>',
 						});
 					}
 				})
@@ -56,7 +56,7 @@ const Home = () => {
 						title: "Oops...",
 						text: "Something went wrong!",
 						footer:
-							'<a href="https://wa.me/1102654851" target="_blank">Contact with the owner?</a>',
+							'<a href="https://wa.me/01102654851" target="_blank">Contact with the owner?</a>',
 					});
 				});
 		} else {
