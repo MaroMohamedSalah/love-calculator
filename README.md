@@ -2,7 +2,7 @@
 ### It's my first project with React.
 
 # The idea is 💡:
-* When the user enters his name and his partner's name the App will navigate him to another page.
+* When the user enters his name ( Must be a valid name ) and his partner's name the App will navigate him to another page.
 * This page is the result page which will calculate the love with them and display the result which contains:
     * Their names.
     * Percentage of the love.
