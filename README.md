@@ -14,4 +14,4 @@
 > HTML, CSS, JS, Bootstrap, React ( Routs, Recoil, Surge, useState, and useEffect ), APIs ( Fetch and Axios), git, and GitHub.
 
 ## Project link 🔗:
-[Here](http://LoveCalc.surge.sh)
+[Here](http://lovecalc.surge.sh/)
