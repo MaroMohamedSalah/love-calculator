@@ -86,7 +86,7 @@ const Result = () => {
 										showRes === false ? "opacity-0" : "opacity-1"
 									}`}
 									onClick={() =>
-										(window.location.href = "https://wa.me/01102654851")
+										(window.location.href = "https://wa.me/+201102654851")
 									}
 								>
 									<i class="fa-brands fa-whatsapp"></i>
