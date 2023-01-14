@@ -102,7 +102,7 @@ const Home = () => {
 										document.getElementById("valid1").style.opacity = 1;
 										document.getElementById("invalid1").style.opacity = 0;
 										setIsInput1Valid(true);
-										setFname(e.target.value);
+										setFname(e.target.value.trim());
 									} else {
 										document.getElementById("valid1").style.opacity = 0;
 										document.getElementById("invalid1").style.opacity = 1;
@@ -138,7 +138,7 @@ const Home = () => {
 										document.getElementById("valid2").style.opacity = 1;
 										document.getElementById("invalid2").style.opacity = 0;
 										setIsInput2Valid(true);
-										setSname(e.target.value);
+										setSname(e.target.value.trim());
 									} else {
 										document.getElementById("valid2").style.opacity = 0;
 										document.getElementById("invalid2").style.opacity = 1;
