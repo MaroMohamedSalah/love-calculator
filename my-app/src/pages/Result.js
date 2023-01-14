@@ -63,6 +63,10 @@ const Result = () => {
 									className={`facebook ${
 										showRes === false ? "opacity-0" : "opacity-1"
 									}`}
+									onClick={() =>
+										(window.location.href =
+											"https://www.facebook.com/profile.php?id=100009187233222")
+									}
 								>
 									<i className="fa-brands fa-facebook-f"></i>
 								</div>
@@ -70,6 +74,10 @@ const Result = () => {
 									className={`instagram ${
 										showRes === false ? "opacity-0" : "opacity-1"
 									}`}
+									onClick={() =>
+										(window.location.href =
+											"https://www.instagram.com/maro_salah1/")
+									}
 								>
 									<i class="fa-brands fa-instagram"></i>
 								</div>
@@ -77,6 +85,9 @@ const Result = () => {
 									className={`whats ${
 										showRes === false ? "opacity-0" : "opacity-1"
 									}`}
+									onClick={() =>
+										(window.location.href = "https://wa.me/01102654851")
+									}
 								>
 									<i class="fa-brands fa-whatsapp"></i>
 								</div>
